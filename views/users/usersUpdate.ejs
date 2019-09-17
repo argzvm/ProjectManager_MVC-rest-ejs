@@ -1,0 +1,25 @@
+<%- include('../.include/.header.ejs') %>
+    <%- include('../.include/.sinavbar.ejs') %>
+
+    <main role="main" class="container my-5 py-5">
+        <h1 class="h3 mb-5 font-weight-normal display-4 text-center">Update user</h1>
+        <form method="POST" class="">
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="fullname" placeholder="<%= data.fullname %>" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email" placeholder="<%= data.email %>" required>
+                </div>
+            </div>
+            <div class="form-group row mt-5">
+                <button type="submit" class="btn btn-lg btn-primary btn-block">Update</button>
+            </div>
+        </form>
+    </main>
+    
+<%- include('../.include/.footer.ejs') %>

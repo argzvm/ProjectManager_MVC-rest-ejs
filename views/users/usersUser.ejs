@@ -1,0 +1,22 @@
+<%- include('../.include/.header.ejs') %>
+    <%- include('../.include/.sinavbar.ejs') %>
+
+    <main role="main" class="container my-5 py-5">
+        <div class="jumbotron">
+            <h1 class="display-4"><%= data.fullname %></h1>
+            <p class="lead"><%= data.profile %></p>
+            <hr class="my-4">
+            <p>Email: <%= data.email %></p>
+            <p>Created at: <%= data.created %></p>
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link btn btn-lg text-primary" href="/users/update">Update</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-lg text-danger" href="/users/delete">Delete</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+<%- include('../.include/.footer.ejs') %>

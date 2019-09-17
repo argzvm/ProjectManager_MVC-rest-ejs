@@ -1,0 +1,43 @@
+<%- include('../.include/.header.ejs') %>
+    <%- include('../.include/.sonavbar.ejs') %>
+
+    <main role="main" class="container my-5 py-5">
+        <h1 class="h3 mb-5 font-weight-normal display-4 text-center">Sign up</h1>
+        <form method="POST" class="form-signin">
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="fullname" placeholder="enter your full name" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" name="email" placeholder="enter your email" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputUsername" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="username" placeholder="enter your username" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="password" placeholder="enter your password" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputConfirm" class="col-sm-2 col-form-label">Confirm</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" name="confirm" placeholder="confirm your password" required>
+                </div>
+            </div>
+            <div class="form-group row mt-5">
+                    <button type="submit" class="btn btn-lg btn-primary btn-block">Sign Up</button>
+                </div>
+          </form>
+    </main>
+
+<%- include('../.include/.footer.ejs') %>

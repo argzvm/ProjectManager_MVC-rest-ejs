@@ -1,0 +1,18 @@
+<%- include('../.include/.header.ejs') %>
+    <%- include('../.include/.sinavbar.ejs') %>
+
+    <main role="main" class="container my-5 py-5">
+        <h1 class="h3 mb-5 font-weight-normal display-4 text-center">Projects</h1>
+        <% projects.map( (project) => { %>
+            <div class="jumbotron">
+                <h2 class="">
+                    <a href="/projects/project/<%= project._id %>"><%= project.title %></a>
+                </h2>
+                <p class="lead">Created by: <%= project.username %></p>
+                <hr class="">
+                <p><%= project.modified %></p>
+            </div>
+        <% }) %>
+    </main>
+
+<%- include('../.include/.footer.ejs') %>
